@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Object-oriented JavaScript example</title>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Object-oriented JavaScript example</title>
+  </head>
+
+  <body>
+    <p>This example requires you to enter commands in your browser's JavaScript console (see <a href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_are_browser_developer_tools">What are browser developer tools</a> for more information).</p>
+
+  </body>
+
+    <script>
+
+      function Person(first, last, age, gender, interests) {
+        this.name = {
+          first : first,
+          last : last
+        }
+        this.age = age;
+        this.gender = gender;
+        this.interests = interests;
+        this.bio = function() {
+
+          let bioInterests;
+          for (let i = 0; i < this.interests.length; i++) {
+            if (i === 0) {
+              bioInterests = this.interests[i];
+            } else if (i === 1) {
+              bioInterests += ' and ' + this.interests[i];
+            } else {
+              bioInterests = bioInterests.replace(' and ', ', ');
+              bioInterests += ' and ' + this.interests[i];
+            }
+          }
+
+          if (this.gender === 'male') {
+            alert(this.name.first + ' ' + this.name.last + ' is ' +this.age + ' years old. He likes ' + bioInterests + '.')
+          } else {
+            alert(this.name.first + ' ' + this.name.last + ' is ' +this.age + ' years old. She likes ' + bioInterests + '.')
+          }
+        }
+        this.greeting = function() {
+          alert('Hi! I\'m ' + this.name.first + '.');
+        };
+      }
+
+      let person4 = new Person('Simon', 'Rivero', 30, 'male', ['Skate']);
+      let person1 = new Person('Bob', 'Smith', 32, 'male', ['music', 'skiing']);
+      let person2 = new Person('Sofia', 'Alvarado', 20, 'famale', ['music', 'design', 'fashion']);
+      let person3 = new Person('Simon', 'Alvarado', 25, 'male', ['music', 'design', 'fashion', 'photography', 'programming', 'football']);
+
+    </script>
+</html>

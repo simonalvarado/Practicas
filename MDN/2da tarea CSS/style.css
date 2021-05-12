@@ -1,0 +1,153 @@
+@font-face {
+    font-family: 'quicksandbold';
+    src: url('fonts/quicksand-bold-webfont.woff2') format('woff2'),
+         url('fonts/quicksand-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'quicksandregular';
+    src: url('fonts/quicksand-regular-webfont.woff2') format('woff2'),
+         url('fonts/quicksand-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* General setup */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  min-width: 1000px;
+  max-width: 1400px;
+}
+
+/* Layout */
+
+section {
+  float: left;
+  width: 50%;
+}
+
+aside {
+  float: left;
+  width: 30%;
+}
+
+nav {
+  float: left;
+  width: 20%;
+}
+
+footer {
+  clear: both;
+}
+
+header, section, aside, nav, footer {
+  padding: 20px;
+}
+
+/* header and footer */
+
+header, footer {
+  border-top: 5px solid #a66;
+  border-bottom: 5px solid #a66;
+}
+
+/* WRITE YOUR CODE BELOW HERE */
+
+body {
+    font-family: 'quicksandregular';
+    font-size: 11px;
+    line-height: 15px;
+    letter-spacing: 0.5px;
+    word-spacing: 1px;
+}
+
+h1 {
+    font-family: 'quicksandregular';
+    font-size: 300%;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+h2 {
+    font-family: 'quicksandregular';
+    font-size: 200%;
+}
+
+section h2 + p {
+    text-indent: 20px;
+}
+
+a {
+    outline: none;
+    color: #a66;
+}
+
+a:visited {
+    color: purple;
+}
+
+a:focus {
+    text-decoration: none;
+    background-color: black;
+}
+
+a:hover {
+    text-decoration: none;
+    background-color: rosybrown;
+    color: black;
+}
+
+nav a:hover {
+    text-decoration: none;
+    background-color: rosybrown;
+    height: 30px;
+    padding: 5px;
+    color: black;
+}
+
+a:active {
+    color: white;
+    background-color: #a66;
+}
+
+a[href*="http"] {
+    background: url("https://github.com/mdn/learning-area/blob/master/css/styling-text/typesetting-a-homepage-start/external-link-52.png?raw=true") no-repeat 100% 0;
+    background-size: 12px 12px;
+    padding-right: 14px;
+}
+
+section ul, aside ul {
+    list-style-type: circle;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav li {
+    font-size: 22px;
+}
+
+nav a { 
+  text-decoration: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px;
+  padding: 2px;
+  width: 130px;
+  height: 30px;
+  font-family: 'quicksandbold';
+  border-bottom: 3px solid #a66;
+}

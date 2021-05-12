@@ -1,0 +1,23 @@
+html {
+    height: 100%;
+}
+
+li {
+    list-style-type: none;
+    margin-right: 10px;
+    /*color de lista */
+}
+
+h1 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+body {
+    font-family: arial;
+}
+
+div {
+    border: 1px solid black;
+    border-radius: 5px;
+}

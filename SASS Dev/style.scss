@@ -1,0 +1,29 @@
+$primarybtn: rgb(66, 36, 43);
+
+@mixin flexcenter($direction, $background) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: $direction;
+    background: $background;
+}
+
+header {
+    @include flexcenter(column, lightblue)
+
+    button {
+        background: $primarybtn;
+        &:hover {
+            background: cornsilk;
+        }
+    }    
+}
+
+.contact {
+    @extend header;
+    text-align: center;
+    button {
+        background: $primarybtn;
+    }
+}

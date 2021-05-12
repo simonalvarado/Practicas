@@ -1,0 +1,116 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+  font-size: 13px;
+  padding-top: 2px;
+  padding-right: 15px;
+}
+
+nav ul {
+  list-style: none;
+  text-align: right;
+}
+
+nav ul li {
+  display: inline;
+  padding-inline: 5px;
+}
+
+nav a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 71px;
+  margin: 47px;
+}
+
+.formulario {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.barras {
+  position: relative;
+  margin: 0 auto;
+  max-width: 725px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+input:focus, textarea:focus, text:focus {
+  outline: none;
+}
+
+*:focus {
+  outline: none;
+}
+
+.borde {
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  line-height: 45px;
+  height: 45px;
+  background: url(https://findicons.com/files/icons/1389/g5_system/32/toolbar_find.png), url(https://www.clipartmax.com/png/middle/15-159611_discussion%5D-opinions-on-the-new-microphone-icon-google-google-search-by-voice.png);
+  background-repeat: no-repeat, no-repeat;
+  background-position: 13% center, 87% center;
+  background-size: 18px;
+}
+
+.escribo {
+  width: 80%;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.87);
+  background-color: transparent;
+  margin-top: -45px;
+  border: none;
+  line-height: 45px;
+  height: 45px;
+  -webkit-box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+          box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+  border-radius: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-indent: 45px;
+}
+
+.ingresos {
+  height: 70px;
+  padding-top: 18px;
+}
+
+.none {
+  display: none;
+}
+/*# sourceMappingURL=style.css.map */

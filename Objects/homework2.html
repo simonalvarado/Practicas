@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+    class Shape{
+        constructor(name, sides, sideLength) {
+        this.name = name;
+        this.sides = sides;
+        this.sideLength = sideLength;
+        }
+    
+        calcPerimeter() {
+            console.log('The perimeter of a ' + this.name + ' with the length of the sides equal to ' + this.sideLength + ' is equal to ' + (this.sides)*(this.sideLength) + '.')
+        }
+    }
+
+    let triangle = new Shape('triangle', 3, 3);
+
+    class Square extends Shape {
+        constructor(sideLength) {
+            super('square', 4, sideLength);
+        }
+
+        calcArea() {
+            console.log('The area of this square is equal to ' + (this.sideLength)*(this.sideLength) + '.')
+        }
+    }
+
+    let square = new Square(6);
+
+</script>
+
+</html>
