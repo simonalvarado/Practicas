@@ -36,6 +36,8 @@
         let rotateCount = 0;
         let startTime = null;
         let rAF;
+        const b = document.querySelector('body');
+        let spinning = false;
 
         function draw(timestamp) {
             //chequeando que es la primera vez que se ingresa al loop
@@ -50,9 +52,20 @@
             spinner.style.transform = `rotate(${rotateCount}deg)`;
 
             rAF = requestAnimationFrame(draw);
+
+            spinning = true;
         }
 
         draw();
+
+        b.addEventListener('click', () => {
+            if (spinning === true) {
+                cancelAnimationFrame(rAF);
+                spinning = false;
+            } else {
+                requestAnimationFrame(draw);
+            }
+        })
 
     </script>
   </body>
