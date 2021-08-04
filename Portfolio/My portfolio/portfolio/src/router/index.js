@@ -1,5 +1,9 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+import Home from '../views/Home.vue'
+import Photography from '../views/Photography.vue'
+import Design from '../views/Design.vue'
+import Contact from '../views/Contact.vue'
 
 Vue.use(VueRouter)
 
@@ -7,17 +11,17 @@ const routes = [
   {
     path: '/',
     name: 'Home',
-    component: () => import(/* webpackChunkName: "about" */ '../views/Home.vue')
+    component: Home
   },
   {
     path: '/photography',
     name: 'Photography',
-    component: () => import(/* webpackChunkName: "about" */ '../views/Photography.vue')
+    component: Photography
   },
   {
     path: '/design',
     name: 'Design',
-    component: () => import(/* webpackChunkName: "about" */ '../views/Design.vue')
+    component: Design
   },
   {
     path: '/contact',
@@ -25,7 +29,7 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/Contact.vue')
+    component: Contact
   }
 ]
 
